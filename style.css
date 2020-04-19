@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+     background: linear-gradient(to top, #33ccff 72%, #ccff66 100%);
+     height: 100vh;
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto
+}
+
+.titolopagina h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.titolopagina {
+    animation-name: titolopagina;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes titolopagina {
+    0% { transform: scale();}
+    50% { transform: scale(1.5);}
+    100% { transform: scale();}
+}
+
+
+main .container>div {
+    background-color: pink;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main div div h2 {
+    font-size: 30px;
+}
+
+main>.container {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    height: calc(100% - 175px);
+    font-family: 'Roboto Slab', serif;
+}
+
+#pasword {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
